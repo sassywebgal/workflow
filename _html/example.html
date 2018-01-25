@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bootstrap Startup</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/main.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]>
+  <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- HEADER SECTION -->
+<header style="background-color: #efefef;">
+  <!-- .score-header-wrapper is styled as bootstrap .container -->
+  <div class="score-header-wrapper">
+    <div class="score-nav">
+      <nav class="navbar navbar-default score-megamenu">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span
+              class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <a href="#" class="navbar-brand">
+            <img src="../img/bj_logo.png" alt="#" width="100">
+          </a>
+        </div>
+        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+          <!-- USE .navbar-right if needed -->
+          <ul class="nav navbar-nav navbar-right">
+            <!-- USE .megamenu-full, .megamenu-medium, .megamenu-small, or just .dropdown -->
+            <li class="score-megamenu-dropdown dropdown  megamenu-full">
+              <a href="#" data-toggle="dropdown">
+                MegaMenu
+              </a>
+              <a href="#" class="dropdown-toggle toggle-caret" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">toggle menu</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <div class="score-megamenu-content">
+                    <div class="score-structural score-column2-wideright">
+                      <div class="score-left">
+                        <ul class="score-section-menu nav score-content score-component">
+                          <li class="score-section-menu-root ">
+                            <a href="#">Page 1</a>
+                          </li>
+                          <li class="">
+                            <a href="#">Page 2</a>
+                          </li>
+                          <li class="">
+                            <a href="#">Page 3</a>
+                          </li>
+                          <li class="">
+                            <a href="#">Page 4</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="score-right">
+                        <!-- USE STYLEBOX HERE IF NECESSARY (ex. for bg color) -->
+                        <div class="score-style-box">
+                          <div class="score-structural score-column2-wideleft">
+                            <div class="score-left">
+                              <div class="score-content-spot score-content score-component">
+                                <h3>Title<br/>Example</h3>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam
+                                  sed purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                                  blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                                  fringilla.</p>
+                              </div>
+                              <div class="score-button-group btn-group score-content score-component">
+                                <a href="#" class="btn btn-warning navbar-btn">Button</a>
+                              </div>
+                            </div>
+                            <div class="score-right">
+                              <div class="score-right">
+                                <a href="#">
+                                  <img class="img-responsive" src="http://placehold.it/150x150">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="score-megamenu-basic-item">
+              <a href="#">Regular Link</a>
+            </li>
+            <li class="score-megamenu-basic-item dropdown">
+              <a href="/play-ball">Dropdown</a>
+              <a href="#" class="dropdown-toggle toggle-caret" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">toggle menu</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="score-dropdown level-2 ">
+                  <a href="#">Learn more about BrainJocks SCORE</a>
+                </li>
+                <li class="score-dropdown level-2 ">
+                  <a href="#" rel="nofollow ">BrainJocks SCORE</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="page-wrapper">
+  <!-- CAROUSEL -->
+  <div class="score-carousel carousel slide score-content score-component" id="carousel" data-ride="carousel" data-interval="8000">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+
+      <div class="score-carousel-pane item cover active"
+           style="background-image: url('http://placehold.it/1920x630&text=[carousel img]');">
+        <!-- .score-carousel-body is styled as bootstrap .container -->
+        <div class="score-carousel-pane-body">
+          <div class="score-structural score-column">
+            <div class="score-center">
+              <div class="score-section-header" style="margin-top: 120px;">
+                <h2>Section Header;<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <a href="#" class="btn btn-default">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="score-carousel-pane item cover"
+           style="background-image: url('http://placehold.it/1920x630&text=[carousel img]');">
+        <!-- .score-carousel-body is styled as bootstrap .container -->
+        <div class="score-carousel-pane-body">
+          <div class="score-structural score-column2-wideleft">
+            <div class="score-left">
+              <div class="score-section-header" style="margin-top: 120px;">
+                <h2>Section Header;<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <a href="#" class="btn btn-default">Button</a>
+              </div>
+            </div>
+            <div class="score-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="score-carousel-pane item cover"
+           style="background-image: url('http://placehold.it/1920x630&text=[carousel img]');">
+        <!-- .score-carousel-body is styled as bootstrap .container -->
+        <div class="score-carousel-pane-body">
+          <div class="score-structural score-column">
+            <div class="score-center">
+              <div class="score-section-header" style="margin-top: 120px;">
+                <h2>Section Header;<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <a href="#" class="btn btn-default">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><!-- ./score-carousel -->
+
+  <div class="score-full-width-hero jumbotron cover score-content score-component score-image score-hero" style="background-image: url('http://placehold.it/1920x630&text=[hero img]');">
+    <div class="container">
+      <h1>Jumbotron Header</h1>
+      <div class="score-hero-body">Lorem ipsum dolor sit amet.</div>
+      <div class="score-call-to-action">
+        <a href="/" class="btn btn-default">Button</a>
+      </div>
+    </div>
+  </div><!-- ./score-full-width-hero -->
+
+  <!-- PAGE SECTION -->
+  <div class="score-container">
+    <div class="container">
+      <div class="score-page score-column1">
+        <div class="score-main">
+          <div class="score-inner">
+            <div class="score-jumbotron score-hero jumbotron cover score-content score-component score-image score-hero" style="background-image: url('http://placehold.it/1920x630&text=[hero img]');">
+              <h1>Jumbotron Header</h1>
+                <div class="score-hero-body">Lorem ipsum dolor sit amet.</div>
+              <div class="score-call-to-action">
+                <a href="/" class="btn btn-default">Button</a>
+              </div>
+            </div><!-- ./score-hero -->
+
+            <div class="score-document-header page-header score-content score-component">
+              <h1>Page Header</h1>
+            </div><!-- ./doc header -->
+
+            <div class="score-document-header-with-subtitle page-header score-content score-component">
+              <h1>
+                Page Header<small style="display: block;">with Subtitle</small>
+              </h1>
+            </div><!-- ./doc header w/ subtitle -->
+
+            <p class="score-lead lead score-content score-component">The Lead component renders a special paragraph that is tagged as a lead text element.</p>
+
+            <div class="score-structural score-column3-equal">
+              <div class="score-left">
+                <div class="score-highlight thumbnail score-content score-component">
+                  <div class="score-highlight-header"></div>
+                  <img class="img-responsive" src="http://placehold.it/350x150&text=[highlight img]">
+                  <div class="caption">
+                    <h2>Title</h2>
+                    <div class="score-highlight-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac lectus id risus tincidunt aliquet non nec sem.</p>
+                    </div>
+                    <div class="score-call-to-action">
+                      <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                  </div>
+                </div><!-- ./score-highlight -->
+              </div>
+              <div class="score-center">
+                  <div class="score-highlight thumbnail score-content score-component">
+                  <div class="score-highlight-header"></div>
+                  <img class="img-responsive" src="http://placehold.it/350x150&text=[highlight img]">
+                  <div class="caption">
+                    <h2>Title</h2>
+                    <div class="score-highlight-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac lectus id risus tincidunt aliquet non nec sem.</p>
+                    </div>
+                    <div class="score-call-to-action">
+                      <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                  </div>
+                </div><!-- ./score-highlight -->
+              </div>
+              <div class="score-right">
+                <div class="score-highlight thumbnail score-content score-component">
+                  <div class="score-highlight-header"></div>
+                  <img class="img-responsive" src="http://placehold.it/350x150&text=[highlight img]">
+                  <div class="caption">
+                    <h2>Title</h2>
+                    <div class="score-highlight-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac lectus id risus tincidunt aliquet non nec sem.</p>
+                    </div>
+                    <div class="score-call-to-action">
+                      <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                  </div>
+                </div><!-- ./score-highlight -->
+              </div>
+            </div>
+          </div>
+        </div><!-- /.main -->
+      </div><!-- /.page -->
+    </div><!-- /.container -->
+  </div>
+
+
+  <!-- PAGE SECTION BREAKS FOR FULL-WIDTH STRIPE SECTION -->
+  <div class="score-stripe" style="margin-bottom: 30px; background-color: #efefef;">
+    <div class="score-container">
+      <div class="container">
+        <div class="score-page score-column1">
+          <div class="score-main">
+            <div class="score-inner">
+              <div class="score-section-header score-content score-component">
+                <h2>Section Header</h2>
+              </div>
+               <p class="score-lead lead score-content score-component">Nulla ac lectus id risus tincidunt aliquet non nec sem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- PAGE SECTION BEGINS AGAIN -->
+  <div class="score-container">
+    <div class="container">
+      <div class="score-page score-column2-largeright">
+        <div class="score-side">
+          <div class="score-inner">
+            <ul class="nav nav-pills nav-stacked score-content score-component" role="menu">
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li class="active">
+                <a href="#">Page 3</a>
+              </li>
+              <li>
+                <a href="#">Page 4</a>
+              </li>
+              <li>
+                <a href="#">Page 5</a>
+              </li>
+            </ul><!-- /.nav-pills -->
+
+            <div class="score-accordion panel-group score-content score-component" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <div class="score-structural score-column2-wideleft">
+                      <div class="score-left">
+                        <div class="score-content-spot score-content score-component">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed purus
+                          in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim blandit
+                        </div>
+                      </div>
+                      <div class="score-right">
+                        <img class="img-responsive" src="http://placehold.it/150x150">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <div class="score-structural score-column2-wideleft">
+                      <div class="score-left">
+                        <div class="score-content-spot score-content score-component">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed purus
+                          in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim blandit
+                        </div>
+                      </div>
+                      <div class="score-right">
+                        <img class="img-responsive" src="http://placehold.it/150x150">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <div class="score-structural score-column2-wideleft">
+                      <div class="score-left">
+                        <div class="score-content-spot score-content score-component">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed purus
+                          in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim blandit
+                        </div>
+                      </div>
+                      <div class="score-right">
+                        <img class="img-responsive" src="http://placehold.it/150x150">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #4
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                    <div class="score-structural score-column2-wideleft">
+                      <div class="score-left">
+                        <div class="score-content-spot score-content score-component">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed purus
+                          in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim blandit
+                        </div>
+                      </div>
+                      <div class="score-right">
+                        <img class="img-responsive" src="http://placehold.it/150x150">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.score-accordion -->
+
+          </div>
+        </div>
+        <div class="score-main">
+          <div class="score-inner">
+            <ol class="breadcrumb score-content score-component">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Last Page</a>
+              </li>
+              <li class="active">Current Page</li>
+            </ol><!-- /.breadcrumb -->
+
+            <ul class="nav nav-pills score-content score-component" role="menu">
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li class="active">
+                <a href="#">Page 3</a>
+              </li>
+              <li>
+                <a href="#">Page 4</a>
+              </li>
+              <li>
+                <a href="#">Page 5</a>
+              </li>
+            </ul><!-- /.nav-pills -->
+
+            <div class="score-content-spot score-content score-component">
+              <h3>Title Example</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam
+                sed purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                fringilla.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam
+                sed purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                fringilla.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam
+                sed purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                fringilla.</p>
+            </div><!-- ./score-content-spot -->
+
+            <div class="score-tab score-content score-component" id="#">
+              <div class="nav-tabs-wrapper-outer">
+                <div class="nav-tabs-wrapper-inner">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#pane1" data-toggle="tab">Brand Managers</a>
+                    </li>
+                    <li>
+                      <a href="#pane2" data-toggle="tab">Web Managers</a>
+                    </li>
+                    <li>
+                      <a href="#pane3" data-toggle="tab">I/T Managers</a>
+                    </li>
+                    <li>
+                      <a href="#pane4" data-toggle="tab">Sitecore Partners</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-content-wrapper-outer">
+                <div class="tab-content-wrapper-inner">
+                  <div class="tab-content">
+                    <div id="pane1" class="score-tab-panel tab-pane fade active in">
+                      <div class="score-structural score-column">
+                        <div class="score-center">
+                          <div class="score-content-spot score-content score-component">
+                            <h3>Title Example</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed
+                              purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                              blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                              fringilla.</p>
+                          </div>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="pane2" class="score-tab-panel tab-pane fade">
+                      <div class="score-structural score-column">
+                        <div class="score-center">
+                          <div class="score-content-spot score-content score-component">
+                            <div class="score-content-spot score-content score-component">
+                              <h3>Title Example 2</h3>
+
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed
+                                purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                                blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                                fringilla.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Button Two</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="pane3" class="score-tab-panel tab-pane fade">
+                      <div class="score-structural score-column  ">
+                        <div class="score-center">
+                          <div class="score-content-spot score-content score-component">
+                            <div class="score-content-spot score-content score-component">
+                              <h3>Title Example 3</h3>
+
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed
+                                purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                                blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                                fringilla.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Button Three</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="pane4" class="score-tab-panel tab-pane fade">
+                      <div class="score-structural score-column">
+                        <div class="score-center">
+                          <div class="score-content-spot score-content score-component">
+                            <div class="score-content-spot score-content score-component">
+                              <h3>Title Example 4</h3>
+
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non rutrum leo. Nam sed
+                                purus in tortor porta cursus. Cras feugiat purus nec lacus suscipit, in porta enim
+                                blandit. Nullam ac vehicula tortor. Suspendisse convallis est malesuada magna varius
+                                fringilla.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Button Four</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /.tab-wrapper -->
+
+            </div>
+          </div>
+        </div>
+      </div><!-- /.page -->
+    </div><!-- /.container -->
+  </div>
+</div><!-- /.page-wrapper -->
+
+
+<!-- FOOTER SECTION -->
+<footer style="background-color: #efefef;">
+  <!-- .score-footer-wrapper is styled as bootstrap .container -->
+  <div class="score-footer-wrapper">
+    <div class="score-footer">
+      <div class="score-structural score-column4-equal">
+        <div class="score-left">
+          <div class="score-section-header score-content score-component">
+            <h2><img class="img-responsive" src="../img/bj_logo.png" alt="#" width="100"></h2>
+          </div>
+        </div>
+        <div class="score-center">
+          <div class="score-section-header score-content score-component">
+            <h2>Title Here</h2>
+          </div>
+          <ul class="score-section-menu nav score-content score-component">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+            <li>
+              <a href="#">Page 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="score-center2">
+          <div class="score-section-header score-content score-component">
+            <h2>Title Here</h2>
+          </div>
+          <ul class="score-section-menu nav score-content score-component">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+            <li>
+              <a href="#">Page 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="score-right">
+          <div class="score-section-header score-content score-component">
+            <h2>Title Here</h2>
+          </div>
+          <ul class="score-section-menu nav score-content score-component">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+            <li>
+              <a href="#">Page 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript comment
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    //prevents dropdown from closing when clicked inside
+    $(document).on('click', '.score-megamenu .dropdown-menu', function (e) {
+      e.stopPropagation()
+    })
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "tek-build",
+  "version": "0.0.1",
+  "description": "TEKsystems Frontend Build Process",
+  "author": "Amanda Blake",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.5",
+    "clean-css": "^4.1.9",
+    "clean-css-cli": "^4.1.10",
+    "concurrently": "^3.5.1",
+    "gulp": "^3.9.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-less": "^3.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-twig": "^1.2.0",
+    "gulp-watch": "^5.0.0",
+    "html-partials-compiler": "^1.0.7",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "postcss-cli": "^4.1.1"
+  },
+  "scripts": {
+    "sass": "node-sass sass/main.scss --output css/ --source-map true",
+    "combineMq": "gulp combineMq",
+    "build:css": "npm run sass && npm run combineMq",
+    "watch:css": "onchange \"sass/**/*.scss\" -- npm run build:css",
+    "less": "gulp watch-less",
+    "minify:css": "npm run build:css && cleancss -o css.min/main.css css.min/main.css",
+    "html": "gulp compile",
+    "server": "browser-sync start --server --no-open --files index.html css/*.css js/*.js",
+    "watch:all": "npm run watch:css",
+    "start": "concurrently 'npm run server' 'npm run watch:all'"
+  }
+}
